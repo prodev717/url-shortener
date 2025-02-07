@@ -4,7 +4,7 @@
 
 <p id="description">A simple full-stack URL shortener built with Flask SQLite TailwindCSS and JavaScript.</p>
 
-<p align="center"><img src="https://img.shields.io/badge/Flask-2.0.1-blue?logo=flask" alt="shields"><img src="https://img.shields.io/badge/SQLite-3.0-blue?logo=sqlite" alt="shields"><img src="https://img.shields.io/badge/TailwindCSS-3.0-blue?logo=tailwindcss" alt="shields"><img src="https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript" alt="shields"><img src="https://img.shields.io/badge/Python-3.10-blue?logo=python" alt="shields"><img src="https://img.shields.io/badge/License-MIT-green" alt="shields"><img src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red?logo=github" alt="shields"><img src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red?logo=github" alt="shields"></p>
+<p align="center"><img src="https://img.shields.io/badge/Flask-2.0.1-blue?logo=flask" alt="shields"><img src="https://img.shields.io/badge/SQLite-3.0-blue?logo=sqlite" alt="shields"><img src="https://img.shields.io/badge/TailwindCSS-3.0-blue?logo=tailwindcss" alt="shields"><img src="https://img.shields.io/badge/JavaScript-ES6-yellow?logo=javascript" alt="shields"><img src="https://img.shields.io/badge/Python-3.10-blue?logo=python" alt="shields"><img src="https://img.shields.io/badge/License-MIT-green" alt="shields"><img src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-red?logo=github" alt="shields">
 
 <h2>🚀 Demo</h2>
 
