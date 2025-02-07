@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>URL Shortener</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white flex flex-col h-screen justify-center items-center">
+	<p class="text-xl text-bold">URL Shortener made with Flask, SQLite and Tailwindcss</p>
+	<div class="p-5 m-5 border border-white rounded-md">
+		<p class="text-3xl font-bold">URL Shortener</p>
+		<input class="bg-black border border-white p-3 my-3 rounded-md focus:outline-none" type="text" name="url" placeholder="Enter URL" id="urlinput">
+		<button class="bg-white text-black p-3 m-3 rounded-md" id="but" onclick="short();">Shorten</button>
+		<a target="_blank" id="disp"></a>
+	</div>
+	<p class="text-xl text-bold">Created by <a class="underline" target="_blank" href="https://github.com/prodev717">Ganesh M</a></p>
+	<script type="text/javascript">
+		function short(argument) {
+			let url = document.getElementById('urlinput');
+			let disp = document.getElementById("disp");
+			fetch("/short",{
+				method: "POST",
+				headers: {"Content-Type":"application/json"},
+				body:JSON.stringify({
+					url: url.value
+				})
+			}).then(res=>res.status==200?res.json():null)
+			  .then(data=>{
+				if(data){
+					disp.innerHTML = `<p class="text-2xl underline">${data.shortened_url}</p>`;
+					disp.href = data.shortened_url;
+				}else{
+					disp.innerHTML = `<p class="text-2xl">URL Invalid</p>`;
+					disp.href = "/";
+				}
+			}).catch(err=>{
+				console.error(err);
+				alert("Something Went Wrong..!");
+			});
+			url.value = "";
+		}
+	</script>
+</body>
+</html>
