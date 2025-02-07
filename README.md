@@ -60,6 +60,7 @@ Technologies used in the project:
 *   flask
 *   html
 *   tailwind CSS
+*   JavaScript
 
 <h2>🛡️ License:</h2>
 
